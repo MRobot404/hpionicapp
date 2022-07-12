@@ -1,3 +1,19 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+  <ion-router-outlet *ngIf="!iniciarSesion"></ion-router-outlet>
+  <div *ngIf="iniciarSesion">
+    <ion-header>
+      <ion-toolbar>
+        <ion-title size="large"> Inicio de sesión</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <div class="centrar">
+    <ion-item>
+      <ion-label>Número mágico:</ion-label>
+      <ion-input type="number" [(ngModel)]="numero" required ></ion-input>
+    </ion-item>
+    <br>
+    <ion-button color="primary" (click)="ingresar(numero)" expand="block">Ingresar</ion-button>
+    <ion-label color="danger" *ngIf="usuarioInvalido">Numero mágico incorrecto</ion-label>
+  </div>
+  </div>
 </ion-app>
