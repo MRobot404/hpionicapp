@@ -5,6 +5,10 @@ const routes: Routes = [
   {
     path: '',
     loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
+  },
+  {
+    path: 'profile1/:name',
+    loadChildren: () => import('./profile1/profile1.module').then( m => m.Profile1PageModule)
   }
 ];
 @NgModule({
