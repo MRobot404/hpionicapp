@@ -11,7 +11,7 @@
         <ion-card
           *ngFor="let character of characters"
           [routerLink]="['/profile1/' +character.name]"
-          (click)="info(character.name, character.species,character.gender,character.house,character.dateOfBirth,character.yearOfBirth, character.wizard,character.ancestry,character.eyeColour,character.hairColour,character.patronus,character.actor)"
+          (click)="info(character.name, character.species,character.gender,character.house,character.dateOfBirth,character.yearOfBirth, character.wizard,character.ancestry,character.eyeColour,character.hairColour,character.patronus,character.actor,character.image)"
         >
           <ion-item>
             <ion-avatar slot="start">

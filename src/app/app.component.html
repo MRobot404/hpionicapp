@@ -12,8 +12,12 @@
       <ion-input type="number" [(ngModel)]="numero" required ></ion-input>
     </ion-item>
     <br>
-    <ion-button color="primary" (click)="ingresar(numero)" expand="block">Ingresar</ion-button>
+    <ion-button color="success" (click)="ingresar(numero)" expand="block">Ingresar</ion-button>
     <ion-label color="danger" *ngIf="usuarioInvalido">Numero mágico incorrecto</ion-label>
   </div>
+  <p id="foot">© MRobot404</p>
   </div>
+
+  
+    
 </ion-app>

@@ -30,9 +30,10 @@ export class Tab1Page {
     eyeColour,
     hairColour,
     patronus,
-    actor
+    actor,
+    imagen
   ) {
-    console.log(name);
+    
     localStorage.setItem('nombre', name);
     localStorage.setItem('especie', species);
     localStorage.setItem('genero', gender);
@@ -45,5 +46,6 @@ export class Tab1Page {
     localStorage.setItem('hair',hairColour);
     localStorage.setItem('patronus', patronus);
     localStorage.setItem('actor',actor)
+    localStorage.setItem("imagen",imagen)
   }
 }
