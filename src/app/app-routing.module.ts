@@ -13,6 +13,10 @@ const routes: Routes = [
   {
     path: 'profile2/:name',
     loadChildren: () => import('./profile2/profile2.module').then( m => m.Profile2PageModule)
+  },
+  {
+    path: 'options',
+    loadChildren: () => import('./options/options.module').then( m => m.OptionsPageModule)
   }
 ];
 @NgModule({

@@ -1,17 +1,20 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Tab 3
-    </ion-title>
+    <ion-title> Tab 3 </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+  <button (click)="boton1()" block>
+    <img src="../../assets/images/leon.jpg" />
+  </button>
+  <button (click)="boton2()" block>
+    <img src="../../assets/images/serpiente.jpg" />
+  </button>
+  <button (click)="boton3()" block>
+    <img src="../../assets/images/tejon.jpg" />
+  </button>
+  <button (click)="boton4()" block>
+    <img src="../../assets/images/aguila.jpg" />
+  </button>
 </ion-content>

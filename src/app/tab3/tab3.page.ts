@@ -8,5 +8,8 @@ import { Component } from '@angular/core';
 export class Tab3Page {
 
   constructor() {}
+  boton1(){
+    console.log("prueba de hola ")
+  }
 
 }
