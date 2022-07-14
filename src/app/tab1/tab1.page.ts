@@ -15,7 +15,7 @@ export class Tab1Page {
       .subscribe((res) => {
         console.log(res);
         this.characters = res;
-        console.log('You are MRobot?');
+       
       });
   }
   info(

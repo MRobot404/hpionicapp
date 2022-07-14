@@ -9,6 +9,10 @@ const routes: Routes = [
   {
     path: 'profile1/:name',
     loadChildren: () => import('./profile1/profile1.module').then( m => m.Profile1PageModule)
+  },
+  {
+    path: 'profile2/:name',
+    loadChildren: () => import('./profile2/profile2.module').then( m => m.Profile2PageModule)
   }
 ];
 @NgModule({
