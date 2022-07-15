@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['app.component.scss'],
 })
 export class AppComponent {
-  iniciarSesion = false;
+  iniciarSesion = true;
   usuarioInvalido: boolean=false;
   nombre:string;
   constructor() {}

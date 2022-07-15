@@ -15,9 +15,27 @@ const routes: Routes = [
     loadChildren: () => import('./profile2/profile2.module').then( m => m.Profile2PageModule)
   },
   {
-    path: 'options',
-    loadChildren: () => import('./options/options.module').then( m => m.OptionsPageModule)
-  }
+    path: 'profile3/:name',
+    loadChildren: () => import('./profile3/profile3.module').then( m => m.Profile3PageModule)
+  },
+  {
+    path: 'glist',
+    loadChildren: () => import('./glist/glist.module').then( m => m.GlistPageModule)
+  },
+  {
+    path: 'hlist',
+    loadChildren: () => import('./hlist/hlist.module').then( m => m.HlistPageModule)
+  },
+  {
+    path: 'rlist',
+    loadChildren: () => import('./rlist/rlist.module').then( m => m.RlistPageModule)
+  },
+  {
+    path: 'slist',
+    loadChildren: () => import('./slist/slist.module').then( m => m.SlistPageModule)
+  },
+
+
 ];
 @NgModule({
   imports: [

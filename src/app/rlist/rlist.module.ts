@@ -4,17 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { OptionsPageRoutingModule } from './options-routing.module';
+import { RlistPageRoutingModule } from './rlist-routing.module';
 
-import { OptionsPage } from './options.page';
+import { RlistPage } from './rlist.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    OptionsPageRoutingModule
+    RlistPageRoutingModule
   ],
-  declarations: [OptionsPage]
+  declarations: [RlistPage]
 })
-export class OptionsPageModule {}
+export class RlistPageModule {}

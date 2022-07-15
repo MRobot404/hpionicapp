@@ -9,7 +9,17 @@ export class Tab3Page {
 
   constructor() {}
   boton1(){
-    console.log("prueba de hola ")
+    location.href="/glist"
+  }
+  boton2(){
+    location.href="/slist"
+  }
+  boton3(){
+    location.href="/hlist"
+  }
+
+  boton4(){
+    location.href="/rlist"
   }
 
 }
